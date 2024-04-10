@@ -28,14 +28,11 @@
  
  */
 
-
-
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = UIColor.grayColor;
-//    [self setupViews];
-//    [self setupLayouts];
+    [self setupViews];
+    [self setupLayouts];
 }
 - (void)setupViews {
     [self.view addSubview:self.leftBtn];
