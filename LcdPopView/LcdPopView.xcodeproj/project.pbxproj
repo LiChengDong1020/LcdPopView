@@ -1,0 +1,792 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5DB3AE72D7CB13FB537450A2 /* Pods_LcdPopViewTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDC57E6B83C3F2170E373944 /* Pods_LcdPopViewTests.framework */; };
+		5EAFFC8F67B794E30D2D07E4 /* Pods_LcdPopView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8518501F22936E62E9721C5 /* Pods_LcdPopView.framework */; };
+		CF61034EB42DA306C30591DF /* Pods_LcdPopView_LcdPopViewUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04604149775350ED2C624561 /* Pods_LcdPopView_LcdPopViewUITests.framework */; };
+		F53333F52BC51FDC0028F4E5 /* StockInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = F53333F42BC51FDC0028F4E5 /* StockInfoView.m */; };
+		F53F81A22BC4ECC300378902 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F53F81A12BC4ECC300378902 /* AppDelegate.m */; };
+		F53F81A52BC4ECC300378902 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F53F81A42BC4ECC300378902 /* SceneDelegate.m */; };
+		F53F81A82BC4ECC300378902 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F53F81A72BC4ECC300378902 /* ViewController.m */; };
+		F53F81AB2BC4ECC300378902 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F53F81A92BC4ECC300378902 /* Main.storyboard */; };
+		F53F81AD2BC4ECC400378902 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F53F81AC2BC4ECC400378902 /* Assets.xcassets */; };
+		F53F81B02BC4ECC400378902 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F53F81AE2BC4ECC400378902 /* LaunchScreen.storyboard */; };
+		F53F81B32BC4ECC400378902 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F53F81B22BC4ECC400378902 /* main.m */; };
+		F53F81BD2BC4ECC400378902 /* LcdPopViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F53F81BC2BC4ECC400378902 /* LcdPopViewTests.m */; };
+		F53F81C72BC4ECC400378902 /* LcdPopViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F53F81C62BC4ECC400378902 /* LcdPopViewUITests.m */; };
+		F53F81C92BC4ECC400378902 /* LcdPopViewUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F53F81C82BC4ECC400378902 /* LcdPopViewUITestsLaunchTests.m */; };
+		F5D126212BC4F46400C609F3 /* PopupContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D126202BC4F46400C609F3 /* PopupContainerViewController.m */; };
+		F5D126242BC5180C00C609F3 /* LeftPopViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D126232BC5180C00C609F3 /* LeftPopViewDelegate.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F53F81B92BC4ECC400378902 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F53F81952BC4ECC300378902 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F53F819C2BC4ECC300378902;
+			remoteInfo = LcdPopView;
+		};
+		F53F81C32BC4ECC400378902 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F53F81952BC4ECC300378902 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F53F819C2BC4ECC300378902;
+			remoteInfo = LcdPopView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04604149775350ED2C624561 /* Pods_LcdPopView_LcdPopViewUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LcdPopView_LcdPopViewUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		28E51ED961181ABCF5C486D5 /* Pods-LcdPopView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LcdPopView.debug.xcconfig"; path = "Target Support Files/Pods-LcdPopView/Pods-LcdPopView.debug.xcconfig"; sourceTree = "<group>"; };
+		494EA0952C14DF275D80A3BA /* Pods-LcdPopView-LcdPopViewUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LcdPopView-LcdPopViewUITests.debug.xcconfig"; path = "Target Support Files/Pods-LcdPopView-LcdPopViewUITests/Pods-LcdPopView-LcdPopViewUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6E6067EE76E900475F8753E1 /* Pods-LcdPopView-LcdPopViewUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LcdPopView-LcdPopViewUITests.release.xcconfig"; path = "Target Support Files/Pods-LcdPopView-LcdPopViewUITests/Pods-LcdPopView-LcdPopViewUITests.release.xcconfig"; sourceTree = "<group>"; };
+		70C9B718DBD696136E45640E /* Pods-LcdPopViewTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LcdPopViewTests.debug.xcconfig"; path = "Target Support Files/Pods-LcdPopViewTests/Pods-LcdPopViewTests.debug.xcconfig"; sourceTree = "<group>"; };
+		ADE9DC402133D04BC360D81C /* Pods-LcdPopView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LcdPopView.release.xcconfig"; path = "Target Support Files/Pods-LcdPopView/Pods-LcdPopView.release.xcconfig"; sourceTree = "<group>"; };
+		B8518501F22936E62E9721C5 /* Pods_LcdPopView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LcdPopView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDC57E6B83C3F2170E373944 /* Pods_LcdPopViewTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LcdPopViewTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0FD4C59843678B344B8EB58 /* Pods-LcdPopViewTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LcdPopViewTests.release.xcconfig"; path = "Target Support Files/Pods-LcdPopViewTests/Pods-LcdPopViewTests.release.xcconfig"; sourceTree = "<group>"; };
+		F53333F32BC51FDC0028F4E5 /* StockInfoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StockInfoView.h; sourceTree = "<group>"; };
+		F53333F42BC51FDC0028F4E5 /* StockInfoView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StockInfoView.m; sourceTree = "<group>"; };
+		F53F819D2BC4ECC300378902 /* LcdPopView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LcdPopView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F53F81A02BC4ECC300378902 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F53F81A12BC4ECC300378902 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F53F81A32BC4ECC300378902 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		F53F81A42BC4ECC300378902 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		F53F81A62BC4ECC300378902 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F53F81A72BC4ECC300378902 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F53F81AA2BC4ECC300378902 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F53F81AC2BC4ECC400378902 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F53F81AF2BC4ECC400378902 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F53F81B12BC4ECC400378902 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F53F81B22BC4ECC400378902 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F53F81B82BC4ECC400378902 /* LcdPopViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LcdPopViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F53F81BC2BC4ECC400378902 /* LcdPopViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LcdPopViewTests.m; sourceTree = "<group>"; };
+		F53F81C22BC4ECC400378902 /* LcdPopViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LcdPopViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F53F81C62BC4ECC400378902 /* LcdPopViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LcdPopViewUITests.m; sourceTree = "<group>"; };
+		F53F81C82BC4ECC400378902 /* LcdPopViewUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LcdPopViewUITestsLaunchTests.m; sourceTree = "<group>"; };
+		F5D1261F2BC4F46400C609F3 /* PopupContainerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PopupContainerViewController.h; sourceTree = "<group>"; };
+		F5D126202BC4F46400C609F3 /* PopupContainerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PopupContainerViewController.m; sourceTree = "<group>"; };
+		F5D126222BC5180C00C609F3 /* LeftPopViewDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeftPopViewDelegate.h; sourceTree = "<group>"; };
+		F5D126232BC5180C00C609F3 /* LeftPopViewDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeftPopViewDelegate.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F53F819A2BC4ECC300378902 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EAFFC8F67B794E30D2D07E4 /* Pods_LcdPopView.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F53F81B52BC4ECC400378902 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DB3AE72D7CB13FB537450A2 /* Pods_LcdPopViewTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F53F81BF2BC4ECC400378902 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF61034EB42DA306C30591DF /* Pods_LcdPopView_LcdPopViewUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2660F332C568B1B26B51E2D7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B8518501F22936E62E9721C5 /* Pods_LcdPopView.framework */,
+				04604149775350ED2C624561 /* Pods_LcdPopView_LcdPopViewUITests.framework */,
+				CDC57E6B83C3F2170E373944 /* Pods_LcdPopViewTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DDBC125A211B4365198522AA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				28E51ED961181ABCF5C486D5 /* Pods-LcdPopView.debug.xcconfig */,
+				ADE9DC402133D04BC360D81C /* Pods-LcdPopView.release.xcconfig */,
+				494EA0952C14DF275D80A3BA /* Pods-LcdPopView-LcdPopViewUITests.debug.xcconfig */,
+				6E6067EE76E900475F8753E1 /* Pods-LcdPopView-LcdPopViewUITests.release.xcconfig */,
+				70C9B718DBD696136E45640E /* Pods-LcdPopViewTests.debug.xcconfig */,
+				E0FD4C59843678B344B8EB58 /* Pods-LcdPopViewTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F53333F22BC51FA50028F4E5 /* LeftPopView */ = {
+			isa = PBXGroup;
+			children = (
+				F5D126222BC5180C00C609F3 /* LeftPopViewDelegate.h */,
+				F5D126232BC5180C00C609F3 /* LeftPopViewDelegate.m */,
+				F53333F32BC51FDC0028F4E5 /* StockInfoView.h */,
+				F53333F42BC51FDC0028F4E5 /* StockInfoView.m */,
+			);
+			path = LeftPopView;
+			sourceTree = "<group>";
+		};
+		F53F81942BC4ECC300378902 = {
+			isa = PBXGroup;
+			children = (
+				F53F819F2BC4ECC300378902 /* LcdPopView */,
+				F53F81BB2BC4ECC400378902 /* LcdPopViewTests */,
+				F53F81C52BC4ECC400378902 /* LcdPopViewUITests */,
+				F53F819E2BC4ECC300378902 /* Products */,
+				DDBC125A211B4365198522AA /* Pods */,
+				2660F332C568B1B26B51E2D7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F53F819E2BC4ECC300378902 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F53F819D2BC4ECC300378902 /* LcdPopView.app */,
+				F53F81B82BC4ECC400378902 /* LcdPopViewTests.xctest */,
+				F53F81C22BC4ECC400378902 /* LcdPopViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F53F819F2BC4ECC300378902 /* LcdPopView */ = {
+			isa = PBXGroup;
+			children = (
+				F53F81A02BC4ECC300378902 /* AppDelegate.h */,
+				F53F81A12BC4ECC300378902 /* AppDelegate.m */,
+				F53F81A32BC4ECC300378902 /* SceneDelegate.h */,
+				F53F81A42BC4ECC300378902 /* SceneDelegate.m */,
+				F53F81A62BC4ECC300378902 /* ViewController.h */,
+				F53F81A72BC4ECC300378902 /* ViewController.m */,
+				F53333F22BC51FA50028F4E5 /* LeftPopView */,
+				F5D1261E2BC4F42200C609F3 /* PopViewKit */,
+				F53F81A92BC4ECC300378902 /* Main.storyboard */,
+				F53F81AC2BC4ECC400378902 /* Assets.xcassets */,
+				F53F81AE2BC4ECC400378902 /* LaunchScreen.storyboard */,
+				F53F81B12BC4ECC400378902 /* Info.plist */,
+				F53F81B22BC4ECC400378902 /* main.m */,
+			);
+			path = LcdPopView;
+			sourceTree = "<group>";
+		};
+		F53F81BB2BC4ECC400378902 /* LcdPopViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				F53F81BC2BC4ECC400378902 /* LcdPopViewTests.m */,
+			);
+			path = LcdPopViewTests;
+			sourceTree = "<group>";
+		};
+		F53F81C52BC4ECC400378902 /* LcdPopViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F53F81C62BC4ECC400378902 /* LcdPopViewUITests.m */,
+				F53F81C82BC4ECC400378902 /* LcdPopViewUITestsLaunchTests.m */,
+			);
+			path = LcdPopViewUITests;
+			sourceTree = "<group>";
+		};
+		F5D1261E2BC4F42200C609F3 /* PopViewKit */ = {
+			isa = PBXGroup;
+			children = (
+				F5D1261F2BC4F46400C609F3 /* PopupContainerViewController.h */,
+				F5D126202BC4F46400C609F3 /* PopupContainerViewController.m */,
+			);
+			path = PopViewKit;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F53F819C2BC4ECC300378902 /* LcdPopView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F53F81CC2BC4ECC400378902 /* Build configuration list for PBXNativeTarget "LcdPopView" */;
+			buildPhases = (
+				C2FA0D3B49CA60694A1DA84D /* [CP] Check Pods Manifest.lock */,
+				F53F81992BC4ECC300378902 /* Sources */,
+				F53F819A2BC4ECC300378902 /* Frameworks */,
+				F53F819B2BC4ECC300378902 /* Resources */,
+				6F72A699B432CFBF0A57F7D8 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LcdPopView;
+			productName = LcdPopView;
+			productReference = F53F819D2BC4ECC300378902 /* LcdPopView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F53F81B72BC4ECC400378902 /* LcdPopViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F53F81CF2BC4ECC400378902 /* Build configuration list for PBXNativeTarget "LcdPopViewTests" */;
+			buildPhases = (
+				A4BAD867165CA09084E96FF3 /* [CP] Check Pods Manifest.lock */,
+				F53F81B42BC4ECC400378902 /* Sources */,
+				F53F81B52BC4ECC400378902 /* Frameworks */,
+				F53F81B62BC4ECC400378902 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F53F81BA2BC4ECC400378902 /* PBXTargetDependency */,
+			);
+			name = LcdPopViewTests;
+			productName = LcdPopViewTests;
+			productReference = F53F81B82BC4ECC400378902 /* LcdPopViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F53F81C12BC4ECC400378902 /* LcdPopViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F53F81D22BC4ECC400378902 /* Build configuration list for PBXNativeTarget "LcdPopViewUITests" */;
+			buildPhases = (
+				0BD5417C74BF27241D5DF085 /* [CP] Check Pods Manifest.lock */,
+				F53F81BE2BC4ECC400378902 /* Sources */,
+				F53F81BF2BC4ECC400378902 /* Frameworks */,
+				F53F81C02BC4ECC400378902 /* Resources */,
+				C8D4531F2C20F313542A9E3D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F53F81C42BC4ECC400378902 /* PBXTargetDependency */,
+			);
+			name = LcdPopViewUITests;
+			productName = LcdPopViewUITests;
+			productReference = F53F81C22BC4ECC400378902 /* LcdPopViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F53F81952BC4ECC300378902 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					F53F819C2BC4ECC300378902 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					F53F81B72BC4ECC400378902 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = F53F819C2BC4ECC300378902;
+					};
+					F53F81C12BC4ECC400378902 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = F53F819C2BC4ECC300378902;
+					};
+				};
+			};
+			buildConfigurationList = F53F81982BC4ECC300378902 /* Build configuration list for PBXProject "LcdPopView" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F53F81942BC4ECC300378902;
+			productRefGroup = F53F819E2BC4ECC300378902 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F53F819C2BC4ECC300378902 /* LcdPopView */,
+				F53F81B72BC4ECC400378902 /* LcdPopViewTests */,
+				F53F81C12BC4ECC400378902 /* LcdPopViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F53F819B2BC4ECC300378902 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F53F81B02BC4ECC400378902 /* LaunchScreen.storyboard in Resources */,
+				F53F81AD2BC4ECC400378902 /* Assets.xcassets in Resources */,
+				F53F81AB2BC4ECC300378902 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F53F81B62BC4ECC400378902 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F53F81C02BC4ECC400378902 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0BD5417C74BF27241D5DF085 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LcdPopView-LcdPopViewUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6F72A699B432CFBF0A57F7D8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LcdPopView/Pods-LcdPopView-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LcdPopView/Pods-LcdPopView-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LcdPopView/Pods-LcdPopView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4BAD867165CA09084E96FF3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LcdPopViewTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2FA0D3B49CA60694A1DA84D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LcdPopView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C8D4531F2C20F313542A9E3D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LcdPopView-LcdPopViewUITests/Pods-LcdPopView-LcdPopViewUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LcdPopView-LcdPopViewUITests/Pods-LcdPopView-LcdPopViewUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LcdPopView-LcdPopViewUITests/Pods-LcdPopView-LcdPopViewUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F53F81992BC4ECC300378902 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5D126242BC5180C00C609F3 /* LeftPopViewDelegate.m in Sources */,
+				F53F81A82BC4ECC300378902 /* ViewController.m in Sources */,
+				F53F81A22BC4ECC300378902 /* AppDelegate.m in Sources */,
+				F53F81B32BC4ECC400378902 /* main.m in Sources */,
+				F53F81A52BC4ECC300378902 /* SceneDelegate.m in Sources */,
+				F53333F52BC51FDC0028F4E5 /* StockInfoView.m in Sources */,
+				F5D126212BC4F46400C609F3 /* PopupContainerViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F53F81B42BC4ECC400378902 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F53F81BD2BC4ECC400378902 /* LcdPopViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F53F81BE2BC4ECC400378902 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F53F81C72BC4ECC400378902 /* LcdPopViewUITests.m in Sources */,
+				F53F81C92BC4ECC400378902 /* LcdPopViewUITestsLaunchTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F53F81BA2BC4ECC400378902 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F53F819C2BC4ECC300378902 /* LcdPopView */;
+			targetProxy = F53F81B92BC4ECC400378902 /* PBXContainerItemProxy */;
+		};
+		F53F81C42BC4ECC400378902 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F53F819C2BC4ECC300378902 /* LcdPopView */;
+			targetProxy = F53F81C32BC4ECC400378902 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F53F81A92BC4ECC300378902 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F53F81AA2BC4ECC300378902 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F53F81AE2BC4ECC400378902 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F53F81AF2BC4ECC400378902 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F53F81CA2BC4ECC400378902 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F53F81CB2BC4ECC400378902 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F53F81CD2BC4ECC400378902 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28E51ED961181ABCF5C486D5 /* Pods-LcdPopView.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LcdPopView/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = lichengdong.LcdPopView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F53F81CE2BC4ECC400378902 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADE9DC402133D04BC360D81C /* Pods-LcdPopView.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LcdPopView/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = lichengdong.LcdPopView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F53F81D02BC4ECC400378902 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70C9B718DBD696136E45640E /* Pods-LcdPopViewTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = lichengdong.LcdPopViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LcdPopView.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LcdPopView";
+			};
+			name = Debug;
+		};
+		F53F81D12BC4ECC400378902 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0FD4C59843678B344B8EB58 /* Pods-LcdPopViewTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = lichengdong.LcdPopViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LcdPopView.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LcdPopView";
+			};
+			name = Release;
+		};
+		F53F81D32BC4ECC400378902 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 494EA0952C14DF275D80A3BA /* Pods-LcdPopView-LcdPopViewUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = lichengdong.LcdPopViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LcdPopView;
+			};
+			name = Debug;
+		};
+		F53F81D42BC4ECC400378902 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E6067EE76E900475F8753E1 /* Pods-LcdPopView-LcdPopViewUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = lichengdong.LcdPopViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LcdPopView;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F53F81982BC4ECC300378902 /* Build configuration list for PBXProject "LcdPopView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F53F81CA2BC4ECC400378902 /* Debug */,
+				F53F81CB2BC4ECC400378902 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F53F81CC2BC4ECC400378902 /* Build configuration list for PBXNativeTarget "LcdPopView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F53F81CD2BC4ECC400378902 /* Debug */,
+				F53F81CE2BC4ECC400378902 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F53F81CF2BC4ECC400378902 /* Build configuration list for PBXNativeTarget "LcdPopViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F53F81D02BC4ECC400378902 /* Debug */,
+				F53F81D12BC4ECC400378902 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F53F81D22BC4ECC400378902 /* Build configuration list for PBXNativeTarget "LcdPopViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F53F81D32BC4ECC400378902 /* Debug */,
+				F53F81D42BC4ECC400378902 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F53F81952BC4ECC300378902 /* Project object */;
+}

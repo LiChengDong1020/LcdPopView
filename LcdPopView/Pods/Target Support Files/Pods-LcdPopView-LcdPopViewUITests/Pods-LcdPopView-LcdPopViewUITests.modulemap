@@ -1,0 +1,6 @@
+framework module Pods_LcdPopView_LcdPopViewUITests {
+  umbrella header "Pods-LcdPopView-LcdPopViewUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
