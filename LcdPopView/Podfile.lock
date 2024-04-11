@@ -3,24 +3,30 @@ PODS:
     - LookinServer/Core (= 1.2.7)
   - LookinServer/Core (1.2.7)
   - Masonry (1.1.0)
+  - SDWebImage (5.19.1):
+    - SDWebImage/Core (= 5.19.1)
+  - SDWebImage/Core (5.19.1)
   - YYModel (1.0.4)
 
 DEPENDENCIES:
   - LookinServer
   - Masonry
+  - SDWebImage
   - YYModel
 
 SPEC REPOS:
   trunk:
     - LookinServer
     - Masonry
+    - SDWebImage
     - YYModel
 
 SPEC CHECKSUMS:
   LookinServer: 36f1a0ad280de34b9794cf8825867fcc2dd93e75
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  SDWebImage: 40b0b4053e36c660a764958bff99eed16610acbb
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: eddea2f572e3e5e134773be120c1a7bc3af030f2
+PODFILE CHECKSUM: 439564ece0b219c9cd0fd4fc9558c663d0d58ea4
 
 COCOAPODS: 1.15.2

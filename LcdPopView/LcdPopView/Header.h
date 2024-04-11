@@ -12,7 +12,7 @@
 #import "UILabel+Extension.h"
 #import <YYModel.h>
 #import "BaseModel.h"
-
+#import <SDWebImage.h>
 //安全区顶部距离
 #define ksafeAreaInsetsTop \
 ({ \
