@@ -58,12 +58,12 @@
     [self presentViewController:popupVC animated:NO completion:nil];
 }
 
-- (void)bottomDragonAction {
-//    BottomPotentialStock *bottomPotentialStock = [[BottomPotentialStock alloc] init];
-//    PopContainerVC *popupVC = [[PopContainerVC alloc] initWithDeletate:bottomPotentialStock];
-//    popupVC.modalPresentationStyle = UIModalPresentationOverCurrentContext;
-//    [self presentViewController:popupVC animated:NO completion:nil];
-}
+//- (void)bottomDragonAction {
+////    BottomPotentialStock *bottomPotentialStock = [[BottomPotentialStock alloc] init];
+////    PopContainerVC *popupVC = [[PopContainerVC alloc] initWithDeletate:bottomPotentialStock];
+////    popupVC.modalPresentationStyle = UIModalPresentationOverCurrentContext;
+////    [self presentViewController:popupVC animated:NO completion:nil];
+//}
 #pragma mark - Lazy
 - (UIButton *)leftBtn {
     if (!_leftBtn) {
