@@ -6,11 +6,11 @@
 //
 
 #import "LeftPopViewDelegate.h"
-#import <Masonry/Masonry.h>
+#import "Header.h"
 #import "StockInfoView.h"
 @interface LeftPopViewDelegate ()
 @property (nonatomic, strong) StockInfoView *infoView;
-@property (nonatomic, strong) UIImageView *kLineView;
+@property (nonatomic, strong) UIView *bottomView;
 @end
 
 @implementation LeftPopViewDelegate
@@ -24,13 +24,13 @@
 }
 
 - (NSString *)centerTitle {
-    return @"Lcd顶部机构";
+    return @"标题";
 }
 
 - (void)setupViews:(UIView *)containerView {
     containerView.backgroundColor = UIColor.whiteColor;
     [containerView addSubview:self.infoView];
-    [containerView addSubview:self.kLineView];
+    [containerView addSubview:self.bottomView];
 }
 
 - (void)setupLayouts:(UIView *)containerView {
@@ -38,11 +38,11 @@
         make.top.equalTo(containerView.mas_top).offset(30);
         make.leading.trailing.equalTo(containerView);
     }];
-    [self.kLineView mas_makeConstraints:^(MASConstraintMaker *make) {
+    [self.bottomView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.infoView.mas_bottom).offset(15);
         make.leading.trailing.equalTo(containerView).inset(20);
-        make.size.mas_equalTo(CGSizeMake([UIScreen mainScreen].bounds.size.width - 40, 330));
-        make.bottom.equalTo(containerView);
+        make.size.mas_equalTo(CGSizeMake([UIScreen mainScreen].bounds.size.width - 40, 200));
+        make.bottom.equalTo(containerView).offset(-10);
     }];
 }
 - (StockInfoView *)infoView {
@@ -52,11 +52,12 @@
     return _infoView;
 }
 
-- (UIImageView *)kLineView {
-    if (!_kLineView) {
-        _kLineView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"top-intuintion-kline"]];
+- (UIView *)bottomView {
+    if (!_bottomView) {
+        _bottomView = [[UIView alloc] init];
+        _bottomView.backgroundColor = UIColor.cyanColor;
     }
-    return _kLineView;
+    return _bottomView;
 }
 - (void)dealloc
 {

@@ -11,6 +11,13 @@
 		5EAFFC8F67B794E30D2D07E4 /* Pods_LcdPopView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8518501F22936E62E9721C5 /* Pods_LcdPopView.framework */; };
 		CF61034EB42DA306C30591DF /* Pods_LcdPopView_LcdPopViewUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04604149775350ED2C624561 /* Pods_LcdPopView_LcdPopViewUITests.framework */; };
 		F53333F52BC51FDC0028F4E5 /* StockInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = F53333F42BC51FDC0028F4E5 /* StockInfoView.m */; };
+		F533347E2BC792520028F4E5 /* TwoLayoutViewsDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F533347D2BC792520028F4E5 /* TwoLayoutViewsDelegate.m */; };
+		F53334812BC794710028F4E5 /* UILabel+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = F53334802BC794710028F4E5 /* UILabel+Extension.m */; };
+		F53334882BC7C70B0028F4E5 /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F53334872BC7C70B0028F4E5 /* CustomCell.m */; };
+		F533348B2BC7C7FE0028F4E5 /* SecondVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F533348A2BC7C7FE0028F4E5 /* SecondVC.m */; };
+		F533348F2BC7CBB60028F4E5 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = F533348E2BC7CBB60028F4E5 /* data.json */; };
+		F53334922BC7CDA70028F4E5 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F53334912BC7CDA70028F4E5 /* BaseModel.m */; };
+		F53334942BC7E0AD0028F4E5 /* data1.json in Resources */ = {isa = PBXBuildFile; fileRef = F53334932BC7E0AD0028F4E5 /* data1.json */; };
 		F53F81A22BC4ECC300378902 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F53F81A12BC4ECC300378902 /* AppDelegate.m */; };
 		F53F81A52BC4ECC300378902 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F53F81A42BC4ECC300378902 /* SceneDelegate.m */; };
 		F53F81A82BC4ECC300378902 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F53F81A72BC4ECC300378902 /* ViewController.m */; };
@@ -54,6 +61,19 @@
 		E0FD4C59843678B344B8EB58 /* Pods-LcdPopViewTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LcdPopViewTests.release.xcconfig"; path = "Target Support Files/Pods-LcdPopViewTests/Pods-LcdPopViewTests.release.xcconfig"; sourceTree = "<group>"; };
 		F53333F32BC51FDC0028F4E5 /* StockInfoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StockInfoView.h; sourceTree = "<group>"; };
 		F53333F42BC51FDC0028F4E5 /* StockInfoView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StockInfoView.m; sourceTree = "<group>"; };
+		F533347C2BC792520028F4E5 /* TwoLayoutViewsDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TwoLayoutViewsDelegate.h; sourceTree = "<group>"; };
+		F533347D2BC792520028F4E5 /* TwoLayoutViewsDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TwoLayoutViewsDelegate.m; sourceTree = "<group>"; };
+		F533347F2BC794710028F4E5 /* UILabel+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+Extension.h"; sourceTree = "<group>"; };
+		F53334802BC794710028F4E5 /* UILabel+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Extension.m"; sourceTree = "<group>"; };
+		F53334822BC795940028F4E5 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		F53334862BC7C70B0028F4E5 /* CustomCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
+		F53334872BC7C70B0028F4E5 /* CustomCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
+		F53334892BC7C7FE0028F4E5 /* SecondVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondVC.h; sourceTree = "<group>"; };
+		F533348A2BC7C7FE0028F4E5 /* SecondVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondVC.m; sourceTree = "<group>"; };
+		F533348E2BC7CBB60028F4E5 /* data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		F53334902BC7CDA60028F4E5 /* BaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
+		F53334912BC7CDA70028F4E5 /* BaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
+		F53334932BC7E0AD0028F4E5 /* data1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data1.json; sourceTree = "<group>"; };
 		F53F819D2BC4ECC300378902 /* LcdPopView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LcdPopView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F53F81A02BC4ECC300378902 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F53F81A12BC4ECC300378902 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -135,6 +155,8 @@
 				F5D126232BC5180C00C609F3 /* LeftPopViewDelegate.m */,
 				F53333F32BC51FDC0028F4E5 /* StockInfoView.h */,
 				F53333F42BC51FDC0028F4E5 /* StockInfoView.m */,
+				F533347C2BC792520028F4E5 /* TwoLayoutViewsDelegate.h */,
+				F533347D2BC792520028F4E5 /* TwoLayoutViewsDelegate.m */,
 			);
 			path = LeftPopView;
 			sourceTree = "<group>";
@@ -170,6 +192,17 @@
 				F53F81A42BC4ECC300378902 /* SceneDelegate.m */,
 				F53F81A62BC4ECC300378902 /* ViewController.h */,
 				F53F81A72BC4ECC300378902 /* ViewController.m */,
+				F53334862BC7C70B0028F4E5 /* CustomCell.h */,
+				F53334872BC7C70B0028F4E5 /* CustomCell.m */,
+				F53334892BC7C7FE0028F4E5 /* SecondVC.h */,
+				F533348A2BC7C7FE0028F4E5 /* SecondVC.m */,
+				F533347F2BC794710028F4E5 /* UILabel+Extension.h */,
+				F53334802BC794710028F4E5 /* UILabel+Extension.m */,
+				F53334902BC7CDA60028F4E5 /* BaseModel.h */,
+				F53334912BC7CDA70028F4E5 /* BaseModel.m */,
+				F533348E2BC7CBB60028F4E5 /* data.json */,
+				F53334932BC7E0AD0028F4E5 /* data1.json */,
+				F53334822BC795940028F4E5 /* Header.h */,
 				F53333F22BC51FA50028F4E5 /* LeftPopView */,
 				F5D1261E2BC4F42200C609F3 /* PopViewKit */,
 				F53F81A92BC4ECC300378902 /* Main.storyboard */,
@@ -315,8 +348,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F533348F2BC7CBB60028F4E5 /* data.json in Resources */,
 				F53F81B02BC4ECC400378902 /* LaunchScreen.storyboard in Resources */,
 				F53F81AD2BC4ECC400378902 /* Assets.xcassets in Resources */,
+				F53334942BC7E0AD0028F4E5 /* data1.json in Resources */,
 				F53F81AB2BC4ECC300378902 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -445,10 +480,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F53334812BC794710028F4E5 /* UILabel+Extension.m in Sources */,
+				F533348B2BC7C7FE0028F4E5 /* SecondVC.m in Sources */,
 				F5D126242BC5180C00C609F3 /* LeftPopViewDelegate.m in Sources */,
+				F53334882BC7C70B0028F4E5 /* CustomCell.m in Sources */,
 				F53F81A82BC4ECC300378902 /* ViewController.m in Sources */,
 				F53F81A22BC4ECC300378902 /* AppDelegate.m in Sources */,
+				F53334922BC7CDA70028F4E5 /* BaseModel.m in Sources */,
 				F53F81B32BC4ECC400378902 /* main.m in Sources */,
+				F533347E2BC792520028F4E5 /* TwoLayoutViewsDelegate.m in Sources */,
 				F53F81A52BC4ECC300378902 /* SceneDelegate.m in Sources */,
 				F53333F52BC51FDC0028F4E5 /* StockInfoView.m in Sources */,
 				F5D126212BC4F46400C609F3 /* PopupContainerViewController.m in Sources */,

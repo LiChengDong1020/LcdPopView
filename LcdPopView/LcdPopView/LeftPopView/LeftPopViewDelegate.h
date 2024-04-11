@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface LeftPopViewDelegate : NSObject<PopupContainerViewControllerDelegate>
+@interface LeftPopViewDelegate : NSObject <PopupContainerViewControllerDelegate>
 
 @end
 

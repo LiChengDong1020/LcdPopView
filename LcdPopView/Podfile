@@ -4,8 +4,9 @@
 target 'LcdPopView' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-pod 'Masonry'
-
+  pod 'Masonry'
+  pod 'LookinServer', :configurations => ['Debug']
+  pod 'YYModel'
   # Pods for LcdPopView
 
   target 'LcdPopViewTests' do

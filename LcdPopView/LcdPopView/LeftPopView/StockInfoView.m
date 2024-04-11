@@ -6,7 +6,7 @@
 //
 
 #import "StockInfoView.h"
-#import <Masonry.h>
+#import "Header.h"
 @interface StockItemInfoView ()
 @property (nonatomic, strong) UIStackView *containerStackView;
 @property (nonatomic, strong) UILabel *topLabel;
