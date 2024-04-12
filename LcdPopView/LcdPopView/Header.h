@@ -13,6 +13,10 @@
 #import <YYModel.h>
 #import "BaseModel.h"
 #import <SDWebImage.h>
+#import "CustomCell.h"
+#import "ThirdVCCell.h"
+#import "ThirdModel.h"
+
 //安全区顶部距离
 #define ksafeAreaInsetsTop \
 ({ \

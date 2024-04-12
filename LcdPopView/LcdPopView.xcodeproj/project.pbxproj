@@ -18,6 +18,9 @@
 		F533348F2BC7CBB60028F4E5 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = F533348E2BC7CBB60028F4E5 /* data.json */; };
 		F53334922BC7CDA70028F4E5 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F53334912BC7CDA70028F4E5 /* BaseModel.m */; };
 		F53334942BC7E0AD0028F4E5 /* data1.json in Resources */ = {isa = PBXBuildFile; fileRef = F53334932BC7E0AD0028F4E5 /* data1.json */; };
+		F53334972BC8BC3E0028F4E5 /* ThirdVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F53334962BC8BC3E0028F4E5 /* ThirdVC.m */; };
+		F533349A2BC8BE310028F4E5 /* ThirdVCCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F53334992BC8BE310028F4E5 /* ThirdVCCell.m */; };
+		F533349D2BC8BE580028F4E5 /* ThirdModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F533349C2BC8BE580028F4E5 /* ThirdModel.m */; };
 		F53F81A22BC4ECC300378902 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F53F81A12BC4ECC300378902 /* AppDelegate.m */; };
 		F53F81A52BC4ECC300378902 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F53F81A42BC4ECC300378902 /* SceneDelegate.m */; };
 		F53F81A82BC4ECC300378902 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F53F81A72BC4ECC300378902 /* ViewController.m */; };
@@ -74,6 +77,12 @@
 		F53334902BC7CDA60028F4E5 /* BaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
 		F53334912BC7CDA70028F4E5 /* BaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
 		F53334932BC7E0AD0028F4E5 /* data1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data1.json; sourceTree = "<group>"; };
+		F53334952BC8BC3E0028F4E5 /* ThirdVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThirdVC.h; sourceTree = "<group>"; };
+		F53334962BC8BC3E0028F4E5 /* ThirdVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThirdVC.m; sourceTree = "<group>"; };
+		F53334982BC8BE310028F4E5 /* ThirdVCCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThirdVCCell.h; sourceTree = "<group>"; };
+		F53334992BC8BE310028F4E5 /* ThirdVCCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThirdVCCell.m; sourceTree = "<group>"; };
+		F533349B2BC8BE580028F4E5 /* ThirdModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThirdModel.h; sourceTree = "<group>"; };
+		F533349C2BC8BE580028F4E5 /* ThirdModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThirdModel.m; sourceTree = "<group>"; };
 		F53F819D2BC4ECC300378902 /* LcdPopView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LcdPopView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F53F81A02BC4ECC300378902 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F53F81A12BC4ECC300378902 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -194,12 +203,18 @@
 				F53F81A72BC4ECC300378902 /* ViewController.m */,
 				F53334862BC7C70B0028F4E5 /* CustomCell.h */,
 				F53334872BC7C70B0028F4E5 /* CustomCell.m */,
+				F53334982BC8BE310028F4E5 /* ThirdVCCell.h */,
+				F53334992BC8BE310028F4E5 /* ThirdVCCell.m */,
 				F53334892BC7C7FE0028F4E5 /* SecondVC.h */,
 				F533348A2BC7C7FE0028F4E5 /* SecondVC.m */,
+				F53334952BC8BC3E0028F4E5 /* ThirdVC.h */,
+				F53334962BC8BC3E0028F4E5 /* ThirdVC.m */,
 				F533347F2BC794710028F4E5 /* UILabel+Extension.h */,
 				F53334802BC794710028F4E5 /* UILabel+Extension.m */,
 				F53334902BC7CDA60028F4E5 /* BaseModel.h */,
 				F53334912BC7CDA70028F4E5 /* BaseModel.m */,
+				F533349B2BC8BE580028F4E5 /* ThirdModel.h */,
+				F533349C2BC8BE580028F4E5 /* ThirdModel.m */,
 				F533348E2BC7CBB60028F4E5 /* data.json */,
 				F53334932BC7E0AD0028F4E5 /* data1.json */,
 				F53334822BC795940028F4E5 /* Header.h */,
@@ -482,13 +497,16 @@
 			files = (
 				F53334812BC794710028F4E5 /* UILabel+Extension.m in Sources */,
 				F533348B2BC7C7FE0028F4E5 /* SecondVC.m in Sources */,
+				F533349A2BC8BE310028F4E5 /* ThirdVCCell.m in Sources */,
 				F5D126242BC5180C00C609F3 /* LeftPopViewDelegate.m in Sources */,
 				F53334882BC7C70B0028F4E5 /* CustomCell.m in Sources */,
+				F53334972BC8BC3E0028F4E5 /* ThirdVC.m in Sources */,
 				F53F81A82BC4ECC300378902 /* ViewController.m in Sources */,
 				F53F81A22BC4ECC300378902 /* AppDelegate.m in Sources */,
 				F53334922BC7CDA70028F4E5 /* BaseModel.m in Sources */,
 				F53F81B32BC4ECC400378902 /* main.m in Sources */,
 				F533347E2BC792520028F4E5 /* TwoLayoutViewsDelegate.m in Sources */,
+				F533349D2BC8BE580028F4E5 /* ThirdModel.m in Sources */,
 				F53F81A52BC4ECC300378902 /* SceneDelegate.m in Sources */,
 				F53333F52BC51FDC0028F4E5 /* StockInfoView.m in Sources */,
 				F5D126212BC4F46400C609F3 /* PopupContainerViewController.m in Sources */,

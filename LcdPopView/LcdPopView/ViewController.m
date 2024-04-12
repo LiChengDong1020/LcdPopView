@@ -12,10 +12,12 @@
 #import "LeftPopView/LeftPopViewDelegate.h"
 #import "LeftPopView/TwoLayoutViewsDelegate.h"
 #import "SecondVC.h"
+#import "ThirdVC.h"
 @interface ViewController ()
 @property (nonatomic, strong) UIButton *button1;
 @property (nonatomic, strong) UIButton *button2;
 @property (nonatomic, strong) UIButton *button3;
+@property (nonatomic, strong) UIButton *button4;
 
 
 
@@ -52,23 +54,30 @@
     [self.view addSubview:self.button1];
     [self.view addSubview:self.button2];
     [self.view addSubview:self.button3];
+    [self.view addSubview:self.button4];
+
 
 }
 - (void)setupLayouts {
-    NSArray *btns = @[self.button1, self.button2,self.button3];
+    NSArray *btns = @[self.button1, self.button2,self.button3,self.button4];
     [btns mas_distributeViewsAlongAxis:MASAxisTypeVertical withFixedSpacing:30 leadSpacing:100 tailSpacing:100];
     
     [self.button1 mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self.view).offset(30);
         make.height.mas_equalTo(44);
+        make.centerX.equalTo(self.view);
     }];
     
     [self.button2 mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.height.equalTo(self.button1);
+        make.centerX.left.height.equalTo(self.button1);
     }];
     
     [self.button3 mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.height.equalTo(self.button1);
+        make.centerX.left.height.equalTo(self.button1);
+    }];
+    
+    [self.button4 mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerX.left.height.equalTo(self.button1);
     }];
 }
 - (void)buttonAction1 {
@@ -84,10 +93,12 @@
     [self presentViewController:popupVC animated:NO completion:nil];
 }
 - (void)buttonAction3 {
-    
     SecondVC *vc = [[SecondVC alloc]init];
-    [self presentViewController:vc animated:NO completion:nil];
-
+    [self presentViewController:vc animated:YES completion:nil];
+}
+- (void)buttonAction4 {
+    ThirdVC *vc = [[ThirdVC alloc]init];
+    [self presentViewController:vc animated:YES completion:nil];
 }
 
 #pragma mark - Lazy
@@ -110,7 +121,12 @@
     }
     return _button3;
 }
-
+- (UIButton *)button4 {
+    if (!_button4) {
+        _button4 = [self setButtonWithTitle:@"cellArray自适应高度" andAciton:@selector(buttonAction4)];
+    }
+    return _button4;
+}
 
 -(UIButton *)setButtonWithTitle:(NSString *)title andAciton:(SEL)action {
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];

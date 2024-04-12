@@ -20,25 +20,21 @@
         [self.contentView addSubview:self.nameLab];
         [self.contentView addSubview:self.messageLab];
 
-        
         [self.headImageView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(self.contentView).offset(5);
             make.leading.equalTo(self.contentView).offset(5);
             make.size.mas_equalTo(CGSizeMake(50, 50));
         }];
         
-        
-        
         [self.nameLab mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(self.contentView).offset(5);
             make.left.equalTo(self.headImageView.mas_right).offset(5);
+            make.trailing.equalTo(self.contentView).offset(-5);
             make.centerY.equalTo(self.headImageView);
         }];
         
-
-        
         [self.messageLab mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.equalTo(self.nameLab.mas_bottom).offset(5);
+            make.top.equalTo(self.headImageView.mas_bottom).offset(5);
             make.leading.equalTo(self.contentView).offset(5);
             make.trailing.equalTo(self.contentView).offset(-5);
             make.bottom.equalTo(self.contentView).offset(-5);

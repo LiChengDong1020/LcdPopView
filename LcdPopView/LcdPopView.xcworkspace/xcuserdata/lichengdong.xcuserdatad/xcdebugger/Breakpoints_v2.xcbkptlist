@@ -3,4 +3,69 @@
    uuid = "319FA590-25B8-4EBC-B386-16AEAA78C18C"
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E36648EC-128C-46A9-8F40-EA49BFFA1DF4"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LcdPopView/ThirdVCCell.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "114"
+            endingLineNumber = "114"
+            landmarkName = "-setupSubViews"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E36648EC-128C-46A9-8F40-EA49BFFA1DF4 - 41319bc50124a1d9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__28-[ThirdVCCell setupSubViews]_block_invoke_3"
+                  moduleName = "LcdPopView"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lichengdong/Desktop/GitHub/PopView/LcdPopView/LcdPopView/ThirdVCCell.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "86"
+                  endingLineNumber = "86"
+                  offsetFromSymbolStart = "184">
+               </Location>
+               <Location
+                  uuid = "E36648EC-128C-46A9-8F40-EA49BFFA1DF4 - d774a60812352587"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[ThirdVCCell setupSubViews]"
+                  moduleName = "LcdPopView"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lichengdong/Desktop/GitHub/PopView/LcdPopView/LcdPopView/ThirdVCCell.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "86"
+                  endingLineNumber = "86"
+                  offsetFromSymbolStart = "1196">
+               </Location>
+               <Location
+                  uuid = "E36648EC-128C-46A9-8F40-EA49BFFA1DF4 - 214e7e24c8bf2da6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__28-[ThirdVCCell setupSubViews]_block_invoke.11"
+                  moduleName = "LcdPopView"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lichengdong/Desktop/GitHub/PopView/LcdPopView/LcdPopView/ThirdVCCell.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "86"
+                  endingLineNumber = "86"
+                  offsetFromSymbolStart = "60">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
